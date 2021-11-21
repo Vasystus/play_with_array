@@ -1,0 +1,48 @@
+body {
+  background: rgb(209, 243, 178);
+ 
+}
+header {
+  text-align: center;
+  font-family: serif;
+}
+.functions {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.fancy_button {
+  
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(20, 160, 66);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.fancy_button:hover {
+  background-color: rgb(21, 6, 104);
+}
+
+.fancy_button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.container {  
+  border: none;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;    
+  }  
+.result{
+  text-align: center;
+}

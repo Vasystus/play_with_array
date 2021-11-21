@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header><h2>Play with Array!</h2></header>
+    <form>
+      <!-- write input box and enter your numbers -->
+      <label for="numbers">Enter your numbers:</label>
+      <input
+        type="text"
+        id="numbers"
+        name="numbers"
+        placeholder="maximum 15 characters"
+        minlength="1"
+        maxlength="15"
+        value="12,45 56"
+        required
+      ></input><br /><br />
+
+      <div class="functions">
+        <input
+          type="radio"
+          id="double_num"
+          name="function"
+          value="double_num"
+          checked="true"
+        />
+        <label for="double_num">Double the Number</label><br /><br />
+
+        <input type="radio" id="multiply" name="function" value="multiply" />
+        <label for="multiply">Multiply by Index</label><br /><br />
+
+        <input type="radio" id="filter" name="function" value="filter" />
+        <label for="filter">Filter the Even</label><br /><br />
+
+        <input type="radio" id="sum" name="function" value="sum" />
+        <label for="sum">Sum of Array</label>
+      </div>
+      <br /><br />
+      <div class="container">
+        <input
+          class="fancy_button"
+          type="Button"
+          value="Calculate"
+          onclick="calculate()"
+        >
+          
+      </input>
+      </div>
+    </form>
+    <br />
+    <p class="result" id="result">The result will be displayed here</p>
+    
+  </body>
+</html>
