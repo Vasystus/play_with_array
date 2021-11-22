@@ -6,6 +6,7 @@
 // let radioButtons = document.querySelectorAll('input[type="radio"]:checked');
 
 function calculate() {
+  console.log("asdasds");
   // Converting input numbers from user into the array
   let input = document.getElementById('numbers').value;
   let numbers = input.replace(' ', ',').split(',');
