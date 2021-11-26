@@ -4,12 +4,25 @@ body {
 }
 header {
   text-align: center;
-  font-family: serif;
+  font-family: 'Lucida Sans', Helvetica, sans-serif;
 }
+
+ .play_area {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+   margin-right: 4px;
+ }
+
 .functions {
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: 'Lucida Sans', Helvetica, sans-serif;
 }
+
 .fancy_button {
   
   border: 0;
@@ -37,12 +50,16 @@ header {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
               inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-.container {  
+
+.button {  
   border: none;  
   display: flex;  
   justify-content: center;  
   align-items: center;    
   }  
+
 .result{
+  font-family: 'Lucida Sans', Helvetica, sans-serif;
+  font-size: 16px;
   text-align: center;
 }

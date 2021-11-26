@@ -1,37 +1,39 @@
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
-    <header><h2>Play with Array!</h2></header>
-    <form>
+      <header><h2>Play with Array!</h2></header>
+        <div class ="play_area">
       <!-- write input box and enter your numbers -->
-      <label for="numbers">Enter your numbers:</label>
-      <input type="text" id="numbers" name="numbers" placeholder="maximum 15 characters" minlength="1" maxlength="15" required><br><br>
+          <label for="numbers">Enter your numbers:</label>
+          <input type="text" id="numbers" name="numbers" placeholder="separated by commas" minlength="1" maxlength="15" required></input><br><br>
 
-      <div class="functions">
-        <input type="radio" id="double_num" name="function" value="double_num">
-        <label for="double_num">Double the Number</label><br><br>
+          <div class="functions">
+            <input type="radio" id="double_num" name="function" value="double_num"/>
+            <label for="double_num">Double the Number</label><br><br>
 
-        <input type="radio" id="multiply" name="function" value="multiply">
-        <label for="multiply">Multiply by Index</label><br><br>
+            <input type="radio" id="multiply" name="function" value="multiply">
+            <label for="multiply">Multiply by Index</label><br><br>
 
-        <input type="radio" id="filter" name="function" value="filter">
-        <label for="filter">Filter the Even</label><br><br>
+            <input type="radio" id="filter" name="function" value="filter">
+            <label for="filter">Filter the Even</label><br><br>
 
-        <input type="radio" id="sum" name="function" value="sum">
-        <label for="sum">Sum of Array</label>
-      </div>
-      <br><br>
-      <div class="container">
-        <input class="fancy_button" type="Button" value="Calculate" onclick="calculate()">
+            <input type="radio" id="sum" name="function" value="sum">
+            <label for="sum">Sum of Array</label>
+          </div>
+          <br><br>
+
+          <div class="button">
+             <input class="fancy_button" type="Button" value="Calculate" onclick="calculate()" ></input>
       </div>
     </form>
-    <br>
+    <br />
     <p class="result" id="result">Check the result here</p>
-
+    
   </body>
 </html>
